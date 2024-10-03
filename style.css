@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #0E0E0E;
+}
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 77px;
+    border-bottom: 1px solid #6D6D6D20;
+}
+#logo{
+    
+    padding: 0;
+    margin: 0;
+    border:none;
+    background-color:#0e0e0e00;
+    cursor: pointer;
+}
+#contacts{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#contacts p{
+
+width: 93px;
+height: 19px;
+left: 0px;
+top: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #E4B564;
+
+
+}
