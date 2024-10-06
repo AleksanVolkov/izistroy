@@ -1,19 +1,31 @@
+
 body{
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: #0E0E0E;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+  
+}
+a{
+    color: transparent;
+    text-decoration: none;
 }
 #header{
-    width: 100%;
+   
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    height: 77px;
+    height: 56px;
     border-bottom: 1px solid #6D6D6D20;
+    width: 340px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 6px;
 }
-#logo{
-    
+#logo_desk{
+    display:none;
     padding: 0;
     margin: 0;
     border:none;
@@ -21,24 +33,127 @@ body{
     cursor: pointer;
 }
 #contacts{
-    
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+   
+  
+}
+#contacts span{
+    font-family: "Inter", sans-serif;
+    color:#E4B564;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#contacts a{
+    color:white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.call_button{
+    color:#E4B564;
+    border: 1px solid #E4B564;
+    border-radius:2px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    width: 160px;
+    height: 30px;
+}
+
+#menu{
+    width: 340px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 25px auto;
+}
+#hero{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    align-items: center;
 }
-#contacts p{
+h1{
+    color:white;
+    font-size: 23px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 30px 0;
+    width: 290px;
+    
+}
+h1 span{
+    color:#E4B564;
+} 
+h2{
+    position: relative;
+    font-size: 20px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0 auto; 
+    width: 290px;
+    font-weight: bold; 
+    text-transform:uppercase ;
+    color:#333333;
+    z-index: 1;
+}
+h2 span{
+    color:#E4B564;
+}  
+h3{
+    
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0; 
+    width: 220px;
+    font-weight: bold;
+}
+.box{
+    position: relative;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid #E4B564;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 240px;
+    z-index: 1;
+    color:#ffffff ;
+}
+#hero img{
+    width: 64px;
+    height: 64px;
+}
+.two,.four{
+    color:#333333 ;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 11px #00000025;
+}
+.two,.four h3{
+    color:#333333 ;
+    
+}
 
-width: 93px;
-height: 19px;
-left: 0px;
-top: 16px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #E4B564;
-
-
+#services{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0 0;
+}
+#services img{
+    position: absolute;
+    width: 100%;
+    top: -180px;
+    z-index: 0;
 }
