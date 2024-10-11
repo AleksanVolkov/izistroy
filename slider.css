@@ -1,0 +1,34 @@
+
+
+.galery{
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.galary_fieid{
+    width: 1300px;
+    display: flex;
+    gap:10px;
+  
+
+} 
+.galary_item{
+    width: 300px;
+    overflow: hidden;
+}
+
+.galary_item img{
+    width: 290px;
+}
+.galery::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: url(./images/chevron-right-square-svgrepo-com.svg);
+}
+.arrow_right{
+  
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}

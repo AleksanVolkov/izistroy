@@ -1,16 +1,19 @@
-
+.unscroll{
+    overflow:hidden;
+    }
 body{
     margin: 0;
-    padding: 0;
+    padding:125px 0 0;
     width: 100%;
     background-color: #0E0E0E;
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
+    
+   
   
 }
 a{
-    color: transparent;
     text-decoration: none;
 }
 li{
@@ -22,16 +25,22 @@ p{
     margin: 0;
 }
 #header{
-   
+    box-sizing: border-box;
+    z-index: 100;
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    height: 56px;
+    top: 0;
+    left: 0;
+    padding: 0 25px;
+    height: 50px;
     border-bottom: 1px solid #6D6D6D20;
-    width: 340px;
-    margin: 0 auto;
+    width: 100%;
+    background-color: #0e0e0e;
     align-items: center;
     margin-bottom: 6px;
 }
+
 #logo_desk{
     display:none;
     padding: 0;
@@ -40,6 +49,155 @@ p{
     background-color:#0e0e0e00;
     cursor: pointer;
 }
+.pop_up{
+    background-color:#333333;
+    z-index: 200;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 50%;
+    display: none;
+    
+
+}
+.close{
+    background: url(./images/close-square-svgrepo-com\ \(3\).svg);
+    background-size:contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    
+}
+
+  .navigation{
+    position: relative;
+    
+  }
+  .navigation__checkbox {
+    display: none;
+  }
+  .navigation__button {
+    background-color: rgba(255, 255, 255, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+  }
+  .navigation__background {
+    
+
+    border: 1px solid #E4B564;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    position: fixed;
+    top: 46px;
+    right: 25px;
+    background-image: radial-gradient(#1f1f1f, #333333);
+    z-index: 1000;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navigation__list {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    
+    width: 100%;
+  }
+  .navigation__item {
+    margin: 1rem;
+  }
+  .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #E4B564 50%);
+    background-size: 220%;
+    transition: all 0.4s;
+  }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block;
+  }
+  .navigation__link:hover, .navigation__link:active {
+    background-position: 100%;
+    color: #333333;
+    transform: translateX(1rem);
+  }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(80);
+  }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%;
+  }
+  .navigation__icon {
+    position: relative;
+   
+  }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+  }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+  .navigation__icon::before {
+    top: -6px;
+  }
+  .navigation__icon::after {
+    top: 6px;
+  }
+  .navigation__button:hover .navigation__icon::before {
+    top: -6px;
+  }
+  .navigation__button:hover .navigation__icon::after {
+    top: 6px;
+  }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent;
+  }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon:before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon:after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+/*--------*/
 #contacts{
     display: flex;
     justify-content: center;
@@ -76,11 +234,18 @@ p{
 }
 
 #menu{
-    width: 340px;
-    height: 40px;
+    background-color: #0e0e0e;
+    box-sizing: border-box;
+    padding: 0 25px;
+    top: 50px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 48px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto 25px auto;
+    border-bottom:1px solid #6e6e6e;
 }
 #hero{
     width: 100%;
@@ -367,12 +532,7 @@ height: 0;
     width: 120px;
 }
 
-.oi_1{
-    
-}
-.oi_2{
-    
-}
+
 .oi_3{
     
     grid-column: 1 / span 2;
@@ -482,4 +642,91 @@ footer{
 .social{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
+}
+form{
+    box-sizing:border-box;
+    margin: 0 auto;
+    width: 290px;
+    border: 1px solid #ffffff;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 35px 30px;
+    position: relative;
+}
+.input_item{
+  position: relative;
+}
+form input{
+margin-bottom: 8px;
+width: 200px;
+height: 60px;
+box-sizing:border-box;
+
+}
+.form_label{
+    position: absolute;
+    top: 20px;
+    transform: translateY(-50%);
+    left: 10px;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+form h3{
+ color:#ffffff;
+ text-align: center;
+ margin-bottom: 8px;
+
+
+}
+
+.form_p_one{
+    font-weight: 300;
+    color:#ffffff;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.form_p_two{
+    font-weight: 300;
+    color:#ffffff;
+    line-height: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+form button{
+    box-sizing:border-box;
+    margin-bottom: 8px;
+    background-color: #E4B564;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    
+}
+
+#portfolio_main h2 {
+
+    color: #E4B564;
+}
+.category{
+    width: 290px;
+    margin: 15px auto 0;
+}
+.category button{
+    width: 137px;
+    height: 33px;
+    color:#E4B564;
+    font-size: 14px;
+    line-height: 11px;
+    margin-bottom: 15px;
+    background-color:transparent;
+    border:1px solid #E4B564;
+    border-radius:5px;
 }
