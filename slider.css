@@ -1,15 +1,18 @@
 
 
 .galery{
+    position: relative;
+    z-index: 100;
     width: 340px;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
 }
-.galary_fieid{
-    width: 1300px;
+.galary_field {
+    min-width: 1300px;
     display: flex;
-    gap:10px;
+    padding-left: 6px;
+   
   
 
 } 
@@ -25,6 +28,8 @@
 }
 
 .arrow_right{
+    position: relative;
+    z-index: 1000;
     background: url(./images/chevron-right-square-svgrepo-com.svg);
     width: 30px;
     height: 30px;
@@ -36,14 +41,65 @@
 }
 
 .arrow_left{
-    background: url(./images/chevron-right-square-svgrepo-com.svg);
+    position: relative;
+    z-index: 1000;
+    background: url(./images/chevron-left-square-svgrepo-com.svg);
     width: 30px;
     height: 30px;
     background-size: cover;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    transform: rotate(-180deg);
+    
     left: -2px;
   
+}
+.info_section{
+    box-sizing:border-box;
+    width: 290px;
+    border:1px solid #FFFFFF;
+    border-radius:10px;
+    margin: 15px auto 35px;
+    padding: 15px;
+
+}
+
+.info_section h3{
+    font-size: 16px;
+    line-height: 20px;
+    color:#FFFFFF;
+    width: 220px;
+    font-weight: 500;
+}
+.line{
+    width: 220px;
+    border-top: 1px solid #ffffff;
+    margin-bottom: 5px;
+}
+.info_section p:nth-of-type(1){
+    font-size: 13px;
+    color:#E4B564;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+.info_section p{
+    font-size: 14px;
+    color:#ffffff;
+    font-weight: 600;
+    
+}
+
+.info_section button{
+    color:#E4B564;
+    border: 1px solid #E4B564;
+    border-radius:2px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    width: 160px;
+    height: 30px;
+    margin-top: 10px;
 }
