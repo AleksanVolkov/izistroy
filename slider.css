@@ -1,9 +1,10 @@
 
 
 .galery{
-    width: 300px;
+    width: 340px;
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
 }
 .galary_fieid{
     width: 1300px;
@@ -13,22 +14,36 @@
 
 } 
 .galary_item{
-    width: 300px;
+    width: 340px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .galary_item img{
     width: 290px;
 }
-.galery::before{
-    content: " ";
-    width: 10px;
-    height: 10px;
-    background: url(./images/chevron-right-square-svgrepo-com.svg);
-}
+
 .arrow_right{
-  
+    background: url(./images/chevron-right-square-svgrepo-com.svg);
     width: 30px;
     height: 30px;
     background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -2px;
+}
+
+.arrow_left{
+    background: url(./images/chevron-right-square-svgrepo-com.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-180deg);
+    left: -2px;
+  
 }
