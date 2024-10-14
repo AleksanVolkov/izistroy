@@ -1,0 +1,42 @@
+#services_main{
+    margin: 0 auto 50px;
+}
+
+#services_main h2{
+    color: #E4B564;
+    margin: 0 auto;
+}
+#services_main h3{
+    font-size: 16px;
+    line-height: 20px;
+    color:#FFFFFF;
+    width: 340px;
+    font-weight: 500;
+    margin: 15px auto;
+   
+}
+#services_main .services_item h3{
+    width: 320px;
+    margin: 0;
+}
+
+#services_main p{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color:#FFFFFF;
+
+    padding: 0;
+    margin: 35px auto 50px ;
+}
+
+.services_item{
+    /* overflow: hidden; */
+    width: 340px;
+    box-sizing: border-box;
+    border: 1px solid #E4B564;
+    padding: 20px 15px 15px;
+    border-radius: 10px;
+   
+    /* height: 50px; */
+}

@@ -2,6 +2,7 @@
     overflow:hidden;
     }
 body{
+    
     margin: 0;
     padding:125px 0 0;
     width: 100%;
@@ -561,6 +562,7 @@ height: 0;
 
 footer{
     padding-top: 100px;
+    border-top: 1px solid #ffffff;
 
 }
 #footer{
@@ -718,6 +720,12 @@ form button{
     font-weight: 600;
     
 }
+
+#portfolio_main{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 
 #portfolio_main h2 {
 

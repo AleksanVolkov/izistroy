@@ -3,9 +3,7 @@ const body = document.querySelector('body'),
         closeModal = document.querySelector('.close'),
         modal=document.querySelector('.pop_up')
 
-const tabsParent= document.querySelector('.category'),
-    galeryArr= document.querySelectorAll('.galery'),
-    tabs=document.querySelectorAll('.tab_item');
+
 
 
 closeModal.addEventListener('click',()=>{
@@ -22,32 +20,43 @@ openModal.addEventListener('click',()=>{
     
 })
 
-/*portfolio***********************************/
-function showGalery(i=0){
-    galeryArr[i].style.display='flex'
-}
 
-function hideGalery(){
-    galeryArr.forEach(item=>{
-        item.style.display="none"
-    })
-}
+/**SERVICES********************************** */
 
-hideGalery();
-showGalery();
+ const  servicesParents = document.querySelector('.services_items'),
+        servicesItem = document.querySelectorAll('.services_item');
+        
 
-tabsParent.addEventListener('click',(e)=>{
-    const target=e.target;
-    if(target && target.classList.contains('tab_item')){
-        tabs.forEach((item,i)=>{
-            if(target==item){
-                hideGalery()
-                showGalery(i);
-            }
+
+
+        function showService(i){
+            servicesItem[i].style.transition='0.7s'
+            servicesItem[i].style.overflow='scroll'
+            servicesItem[i].style.height='350px'
+        }
+
+        function hideService(){
+           
+            servicesItem.forEach(item=>{
+                item.style.transition='0.7s'
+                item.style.overflow='hidden'
+                item.style.height='70px'
+            })
+        }
+        
+        hideService()
+        showService(0)
+
+        servicesParents.addEventListener('click',(e)=>{
+           
+            const target=e.target;
+            servicesItem.forEach((item,i)=>{
+                if( item==target || e.target.tagName == 'H3' && e.target.parentNode == item){
+                    hideService()
+                    showService(i)
+                }
+            })
         })
-    }
-
-})
 
 
  
