@@ -5,11 +5,16 @@ const tabsParent= document.querySelector('.category'),
 /*portfolio***********************************/
 function showGalery(i){
     galeryArr[i].style.display='flex'
+    tabs[i].setAttribute('style',"color:#FFFFFF;border:1px solid #ffffff;font-weight:400;background-color: #af8946")
+
 }
 
 function hideGalery(){
     galeryArr.forEach(item=>{
         item.style.display="none"
+    })
+    tabs.forEach(item=>{
+        item.setAttribute('style',"")
     })
 }
 

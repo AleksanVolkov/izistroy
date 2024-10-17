@@ -312,6 +312,26 @@ h3{
     z-index: 1;
     color:#ffffff ;
 }
+.button_hero_section{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+#left_hero button{
+    width: 140px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #E4B564;
+    color: #E4B564;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+    
+}
 #hero img{
     width: 64px;
     height: 64px;
@@ -748,4 +768,319 @@ form button{
     background-color:transparent;
     border:1px solid #E4B564;
     border-radius:5px;
+    transition: all 0.6s;
+}
+
+@media (min-width: 600px){
+    
+    #right_hero{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 580px;
+
+    }
+    .button_hero_section{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    .box{
+        box-sizing: border-box;
+        height: 190px;
+        width: 288px;
+        margin-bottom: 6px;
+    }
+    
+    h1 {
+        font-size: 48px;
+        line-height: 42px;
+        width: 590px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 40px;
+        line-height: 42px;
+        width: 590px;
+    }
+    li{
+        margin-bottom: 25px;
+    }
+    .row_two{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4px;
+    }
+    .two, .four {
+        box-shadow:  0 4px 11px #2e2d2d7d;
+
+    }
+    #services img {
+        top:-90px;
+    }
+    #services_ul{
+        width: 590px;
+        height: 375px;
+    }
+    
+    #services_ul li a{
+        font-size: 20px;
+        line-height: 20px;
+
+    }
+    .ser_plus_row{
+        display: flex;
+        justify-content: space-between;
+        width: 590px;
+        margin: 0 auto;
+    }
+    #advantages{
+        width: 590px;
+    }
+    .advantages_items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .advantages_item h3{
+        width: 170px;
+        font-size: 20px;
+    }
+    .advantages_item{
+        padding-top: 25px;
+        width: 195px;
+        height: 210px;
+    }
+    .advantages_item p{
+        font-size: 15px;
+        width: 160px;
+    }
+    .advantages_item span {
+        top: 5px;
+        font-size: 25px;
+    }
+
+    .objects_field{
+       
+        display: grid;
+        width: 590px;
+        grid-gap: 13px;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(6,1fr);
+        height: 400px;
+      
+        
+    }
+    #objects img{
+        top: -75px;
+        height: 655px;
+    }
+    
+    
+    .oi_1{
+       
+        grid-row: 1 / span 3;
+      
+    }
+    .oi_2{
+        grid-row: 4/ span 3;
+        
+    }
+    .oi_3{
+        grid-column:2/ span1 ;
+        grid-row: 1 / span 2;
+    }
+    .oi_4{
+        grid-column:2/ span1 ;
+        grid-row: 3 / span 4;
+    }
+    
+    .oi_5{
+        grid-row: 1 / span 6;
+        
+        
+    }
+}
+@media (min-width: 1360px){
+    #logo_desk{
+        display: block;
+        position: absolute;
+        left: 100px;
+    }
+    #logo_mob{display: none;}
+    .navigation{
+        display: none;
+        justify-content: flex-end;
+    }
+    #contacts{
+        flex-direction: column;
+    }
+    #header{
+       
+        padding: 0 100px;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    #hero{
+        width: 1200px;
+        margin: 50px auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    #left_hero{
+
+    }
+
+    
+    #left_hero button{
+        width: 180px;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 500;
+        
+        
+
+
+        
+    }
+    #right_hero{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 588px;
+        gap: 11px;
+
+    }
+    .row_two{
+        width: 588px;
+        gap: 11px;
+    }
+    .box{
+        box-sizing: border-box;
+        height: 190px;
+        width: 288px;
+        margin-bottom: 6px;
+    }
+    
+    h1 {
+       
+        padding-top: 25px;
+    }
+    h2{
+        margin-bottom: 50px;
+        width: 1200px;
+    }
+    li{
+        margin-bottom: 25px;
+    }
+   
+    .two, .four {
+        box-shadow:  0 4px 11px #2e2d2d7d;
+
+    }
+    #services img {
+       
+        top:-60px;
+        height: 760px;
+    }
+    .services{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    #services_ul{
+        margin: 0;
+    }
+    
+    #services_ul li a{
+        font-size: 20px;
+        line-height: 20px;
+
+    }
+    .services_plus{
+        line-height: 20px;
+        height: 120px;
+    }
+    .ser_plus_row{
+        display: flex;
+        justify-content: space-between;
+        width: 590px;
+        margin: 0 ;
+    }
+    #advantages{
+        width: 1200px;
+    }
+    .advantages_items{
+        display: flex;
+        justify-content: space-between;
+    }
+    #advantages h2{
+       margin: 50px auto;
+       width: 1200px;
+    }
+    .advantages_item h3{
+        width: 235px;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .advantages_item{
+        padding-top: 125px;
+        width: 385px;
+        height: 310px;
+    }
+    .advantages_item p{
+        font-size: 16px;
+        line-height: 18px;
+        width: 280px;
+    }
+    .advantages_item span {
+        top: 10px;
+        left: 25px;
+        font-size: 80px;
+    }
+
+    .objects_field{
+       
+        display: grid;
+        width: 590px;
+        grid-gap: 13px;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(6,1fr);
+        height: 400px;
+      
+        
+    }
+    #objects img{
+        top: -75px;
+        height: 655px;
+    }
+    
+    
+    .oi_1{
+       
+        grid-row: 1 / span 3;
+      
+    }
+    .oi_2{
+        grid-row: 4/ span 3;
+        
+    }
+    .oi_3{
+        grid-column:2/ span1 ;
+        grid-row: 1 / span 2;
+    }
+    .oi_4{
+        grid-column:2/ span1 ;
+        grid-row: 3 / span 4;
+    }
+    
+    .oi_5{
+        grid-row: 1 / span 6;
+        
+        
+    }
 }
