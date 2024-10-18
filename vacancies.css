@@ -1,0 +1,50 @@
+#vacancies_main{
+    margin: 0 auto 50px;
+}
+
+#vacancies_main h2{
+    color: #E4B564;
+    margin: 0 auto;
+}
+#vacancies_main h3{
+    font-size: 16px;
+    line-height: 20px;
+    color:#FFFFFF;
+    width: 340px;
+    font-weight: 500;
+    margin: 15px auto ;
+}
+
+#vacancies_main p{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color:#FFFFFF;
+    width: 340px;
+    padding: 0;
+    margin: 15px auto 50px ;
+}
+.vac_phone{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color:#E4B564;
+}
+.vacancies_item{
+    color:#E4B564;
+    width: 340px;
+    background-color: #313131;
+    padding: 10px;
+}
+.vacancies_item:nth-child(2n+1){
+    background-color: #313131;
+}
+.vacancies_item:nth-child(2n){
+    background-color: #3f3f3f;
+}
+.vacancies_item span{
+    padding-bottom: 5px;
+}
+#vacancies_main .vacancies_item p{
+    margin: 0;
+}
