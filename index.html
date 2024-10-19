@@ -58,12 +58,12 @@
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="./services.html" class="navigation__link ">Услуги </a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link ">Проекты</a></li>
+                    <li class="navigation__item"><a href="./projects.html" class="navigation__link ">Проекты</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link ">Блог </a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link ">Технология </a></li>
                     <li class="navigation__item"><a href="./portfolio.html" class="navigation__link ">Портфолио </a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link ">Контакты  </a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link ">Документы  </a></li>
+                    <li class="navigation__item"><a href="./documents.html" class="navigation__link ">Документы  </a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link ">Объекты   </a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link ">О нас   </a></li>
                     <li class="navigation__item"><a href="./vacancies.html" class="navigation__link ">Вакансии   </a></li>
@@ -80,7 +80,7 @@
                 <h1>ВЕСЬ СПЕКТР <span>строительных услуг</span> 
                     в одном месте</h1>
                     <div class="button_hero_section">
-                        <button>Наши проекты</button>
+                        <button onclick="window.location.href = './projects.html';">Наши проекты</button>
                         <button>Перезвоните мне</button> 
                     </div>
                     
@@ -188,11 +188,13 @@
                 <img src="./images/two_360px.png" alt="Абстрактное изображение">
             </picture>
             <h2>ЧТО МЫ СТРОИМ</h2>
-            <div class="objects_field">
+            <div class="obj_wrapper">
+                <div class="objects_field">
                 <div class="object_item oi_1">
                     <picture>
                         <source srcset="./images/sklad_360px.webp" media="(max-width: 500px)">
                         <source srcset="./images/sklad_600px.webp" media="(max-width: 1300px)">
+                        <source srcset="./images/sklad_1300px.webp" media="(max-width: 1980px)">
                         <img src="./images/sklad_360px.webp" alt="склад">
                     </picture>
                     <h3>склады</h3>
@@ -201,6 +203,7 @@
                     <picture>
                         <source srcset="./images/school_360px.webp" media="(max-width: 500px)">
                         <source srcset="./images/school_600px.webp" media="(max-width: 1300px)">
+                        <source srcset="./images/school_1300px.webp" media="(max-width: 1980px)">
                         <img src="./images/school_360px.webp" alt="школа">
                     </picture>
                     <h3>школы</h3>
@@ -209,6 +212,7 @@
                     <picture>
                         <source srcset="./images/BC_360px.webp" media="(max-width: 500px)">
                         <source srcset="./images/BC_600px.webp" media="(max-width: 1300px)">
+                        <source srcset="./images/BC_1300px.webp" media="(max-width: 1980px)">
                         <img src="./images/BC_360px.webp" alt="бизнес-центры">
                     </picture>
                     <h3>бизнес-центры</h3>
@@ -217,6 +221,7 @@
                     <picture>
                         <source srcset="./images/mall_360px.webp" media="(max-width: 500px)">
                         <source srcset="./images/mall_600px.webp" media="(max-width: 1300px)">
+                        <source srcset="./images/mall_1300px.webp" media="(max-width: 1980px)">
                         <img src="./images/mall_360px.webp" alt="торговые центры">
                     </picture>
                     <h3>торговые центры</h3>
@@ -225,66 +230,85 @@
                     <picture>
                         <source srcset="./images/home_360px.webp" media="(max-width: 500px)">
                         <source srcset="./images/home_600px.webp" media="(max-width: 1300px)">
+                        <source srcset="./images/home_1300px.webp" media="(max-width: 1980px)">
                         <img src="./images/home_360px.webp" alt="жилые дома">
                     </picture>
                     <h3>дома</h3>
                 </div>
             </div>
+            </div>
+            
         </section>
        
     </main>
     <footer>
         <section id="footer">
-            
-            <div class="tel">
-                <a href="tel:+375295465465" class="t_one">+375 <span>29</span> 5-465-465</a>
-                <a href="tel:+375295465465">+375 <span>33</span> 5-465-465</a>
-                <a href="tel:+375295465465">+375 <span>25</span> 5-465-465</a>
+
+            <div id="footer_left">
+                <div class="tel">
+                    <a href="tel:+375295465465" class="t_one">+375 <span>29</span> 5-465-465</a>
+                    <a href="tel:+375295465465">+375 <span>33</span> 5-465-465</a>
+                    <a href="tel:+375295465465">+375 <span>25</span> 5-465-465</a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:Izistroy@inbox.ru">Напишите нам</a>
+                </div>
+                <div class="time">
+                    <span>время работы:</span>
+                    <p>без выходных с 9:00 до 21:00</p>
+                    <p>обед с 13:00 до 14:00</p>
+                </div>
+                <div class="social">
+                    <a href="">
+                        <img src="./images/viber-svgrepo-com (2) 2.svg" alt="viber">
+                    </a>
+                    <a href="">
+                        <img src="./images/instagram-svgrepo-com (2) 2.svg" alt="viber">
+                    </a>
+                    <a href="">
+                        <img src="./images/telegram-svgrepo-com (2) 2.svg" alt="viber">
+                    </a>
+                    <a href="">
+                        <img src="./images/whatsapp-svgrepo-com (3) 2.svg" alt="viber">
+                    </a>
+                    <a href="">
+                        <img src="./images/telegram-svgrepo-com (2) 2.svg" alt="viber">
+                    </a>
+                    <a href="">
+                        <img src="./images/viber-svgrepo-com (2) 2.svg" alt="viber">
+                    </a>
+                </div>
             </div>
-            <div class="mail">
-                <a href="mailto:Izistroy@inbox.ru">Напишите нам</a>
-            </div>
-            <div class="time">
-                <span>время работы:</span>
-                <p>без выходных с 9:00 до 21:00</p>
-                <p>обед с 13:00 до 14:00</p>
-            </div>
-            <div class="social">
-                <a href="">
-                    <img src="./images/viber-svgrepo-com (2) 2.svg" alt="viber">
-                </a>
-                <a href="">
-                    <img src="./images/instagram-svgrepo-com (2) 2.svg" alt="viber">
-                </a>
-                <a href="">
-                    <img src="./images/telegram-svgrepo-com (2) 2.svg" alt="viber">
-                </a>
-                <a href="">
-                    <img src="./images/whatsapp-svgrepo-com (3) 2.svg" alt="viber">
-                </a>
-                <a href="">
-                    <img src="./images/telegram-svgrepo-com (2) 2.svg" alt="viber">
-                </a>
-                <a href="">
-                    <img src="./images/viber-svgrepo-com (2) 2.svg" alt="viber">
-                </a>
-            </div>
-        </section>
-        <form action="">
-            <h3>Остались вопросы?</h3>
-            <p class="form_p_one">Просто оставьте заявку заявку и мы окажем Вам профессиональную консультацию.</p>
-         
-          
+            <nav class="navigation__footer">
+                <ul class="navigation__list_footer">
+                    <li class="navigation__item_footer"><a href="./services.html" class="navigation__link ">Услуги </a></li>
+                    <li class="navigation__item_footer"><a href="./projects.html" class="navigation__link ">Проекты</a></li>
+                    <li class="navigation__item_footer"><a href="#" class="navigation__link ">Блог </a></li>
+                    <li class="navigation__item_footer"><a href="#" class="navigation__link ">Технология </a></li>
+                    <li class="navigation__item_footer"><a href="./portfolio.html" class="navigation__link ">Портфолио </a></li>
+                    <li class="navigation__item_footer"><a href="#" class="navigation__link ">Контакты  </a></li>
+                    <li class="navigation__item_footer"><a href="./documents.html" class="navigation__link ">Документы  </a></li>
+                    <li class="navigation__item_footer"><a href="#" class="navigation__link ">Объекты   </a></li>
+                    <li class="navigation__item_footer"><a href="#" class="navigation__link ">О нас   </a></li>
+                    <li class="navigation__item_footer"><a href="./vacancies.html" class="navigation__link ">Вакансии   </a></li>
+                </ul>
+            </nav>
+            <form action="">
+                <h3>Остались вопросы?</h3>
+                <p class="form_p_one">Просто оставьте заявку заявку и мы окажем Вам профессиональную консультацию.</p>
               
-                <input type="text" placeholder="Ваше имя">
-          
-        
-                 <input type="text" placeholder="+375" value="+375">
-       
+              
+                  
+                    <input type="text" placeholder="Ваше имя">
+              
             
-            <button>Получить консультацию</button>
-            <p class="form_p_two">Ваши контакты используются исключительно для связи с Вами и не будут переданы третьим лицам.</p>
-        </form>
+                     <input type="text" placeholder="+375" value="+375">
+           
+                
+                <button>Получить консультацию</button>
+                <p class="form_p_two">Ваши контакты используются исключительно для связи с Вами и не будут переданы третьим лицам.</p>
+            </form>
+        </section>
 
     </footer>
     <script src="./script.js"></script>
