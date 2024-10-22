@@ -32,7 +32,7 @@ openModal.addEventListener('click',()=>{
         function showService(i){
             servicesItem[i].style.transition='0.7s'
             servicesItem[i].style.overflow='scroll'
-            servicesItem[i].style.height='350px'
+            servicesItem[i].style.height='430px'
         }
 
         function hideService(){
