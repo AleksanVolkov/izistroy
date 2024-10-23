@@ -1308,6 +1308,22 @@ padding: 0;
         width: 590px;
         margin: 0 auto;
     }
+
+    #blog_page__main{
+       
+    }
+    .blog_items{
+        width: 590px;
+    }
+
+    .blog_item h3{
+        width: 590px;
+        font-size: 20px;
+    }
+
+    .blog_item p{
+        font-size: 16px;
+    }
     #advantages{
         width: 590px;
     }
@@ -1555,6 +1571,32 @@ padding: 0;
         justify-content: space-between;
         width: 590px;
         margin: 25px 0;
+    }
+    #blog_page__main{
+        margin-bottom: 30px;
+    }
+   .blog_items{
+       display: flex;
+       justify-content: space-between;
+       width: 1200px;
+       margin: 0 auto;
+    }
+    .blog_item{
+        width: 380px;
+        
+    }
+    .descr{
+        min-height: 250px;
+    }
+
+    .blog_item h3{
+        width: 380px;
+        font-size: 20px;
+        min-height: 75px;
+    }
+
+    .blog_item p{
+        font-size: 16px;
     }
     #advantages{
         width: 1200px;
