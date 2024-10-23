@@ -1053,6 +1053,12 @@ padding: 0;
     
     
 }
+
+.descr{
+    width: 290px;
+    margin: 0 auto 15px;
+    z-index: 1;
+}
 #technologies_main h3{
     position: relative;
     z-index: 3;
