@@ -18,12 +18,14 @@
 #services_main .services_item h3{
     width: 290px;
     margin: 0;
+    color:bisque;
+    font-weight: 600;
 }
 
 #services_main p{
     font-size: 14px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 300;
     color:#FFFFFF;
 
     padding: 0;

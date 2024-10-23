@@ -1190,7 +1190,7 @@ padding: 0;
     width: 100%;
     margin: 0 auto;
     color:#ffffff;
-    background:url(./images/160225.png);
+    background:url(./images/blogBG_360px.webp);
     background-size:contain;
     
 }
@@ -1204,9 +1204,11 @@ padding: 0;
     color:#ffffff;
     margin-bottom: 8px;
     font-size: 14px;
+    padding-left: 10px;
 }
 #future_main p span{
-    font-weight: 600;
+   color: #bca487;
+   
 }
 .future{
     width: 290px;
@@ -1215,8 +1217,16 @@ padding: 0;
 }
 #future_main p.future_p{
     font-size: 14px;
-    font-weight: 600;
+    
+}
+#future_main p.p_title{
+    padding-left: 0;
+}
 
+#future_main p.p_title span{
+    color:#ffbb6b;
+    padding-left: 0;
+    
 }
 .future ul{
     margin-bottom: 15px;
@@ -1324,6 +1334,13 @@ padding: 0;
     .blog_item p{
         font-size: 16px;
     }
+    #future_main{
+        
+        
+        background:url(./images/blogBG_600px.webp);
+        
+        
+    }
     #advantages{
         width: 590px;
     }
@@ -1421,8 +1438,8 @@ padding: 0;
         width: 100%;
       }
       .navigation__nav_desk{
-        width: 100%;
-        padding: 0 100px;
+        width: 55%;
+        padding: 15px 100px;
         box-sizing:border-box ;
       }
       .navigation__list_desk{
@@ -1523,7 +1540,7 @@ padding: 0;
         padding-top: 25px;
     }
     h2{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         width: 1200px;
     }
     .hero_h2{
@@ -1598,6 +1615,48 @@ padding: 0;
     .blog_item p{
         font-size: 16px;
     }
+    .future{
+        width: 1200px;
+    }
+    #future_main h3{
+        width: 1200px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .future_items{
+        width: 1290px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #future_main p {
+        color: #ffffff;
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 25px;
+    }
+    #future_main p.future_p{
+        font-size: 16px;
+        padding-left: 0;
+    }
+    #future_main p.p_title{
+        padding-left: 0;
+    }
+    
+    #future_main p.p_title span{
+        color:#ffbb6b;
+        padding-left: 0;
+        
+    }
+    li{
+        margin-bottom: 15px;
+        margin: 0 auto;
+    }
+    li span.p_title{
+        color:#ffbb6b;
+    }
+  
     #advantages{
         width: 1200px;
     }
