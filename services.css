@@ -40,3 +40,36 @@
    
    
 }
+@media (min-width: 600px){
+
+    #services_main h3{
+        width: 590px;
+        font-size: 20px;
+    }
+    .services_items{
+       
+        margin-top: 15px;
+    }
+    .services_item{
+        width: 590px;
+        
+    }
+    #services_main p{
+        font-size: 16px;
+       
+    }
+    #services_main .services_item h3 {
+        width: 400px;
+        
+    }
+}
+@media (min-width: 600px){
+    #services_main h3{
+        width: 1200px;
+        font-size: 20px;
+    }
+    .services_item{
+        width: 1200px;
+        
+    }
+}
