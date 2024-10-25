@@ -22,8 +22,25 @@
     border-width: 1px 1px 0 1px; */
     width: 290px;
 }
-
-
+.category{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 290px;
+    margin: 15px auto 0;
+}
+.category button{
+    width: 137px;
+    height: 33px;
+    color:#E4B564;
+    font-size: 14px;
+    line-height: 11px;
+    margin-bottom: 15px;
+    background-color:transparent;
+    border:1px solid #E4B564;
+    border-radius:5px;
+    transition: all 0.8s;
+}
 
 
 .info_section{
@@ -74,4 +91,79 @@
     width: 160px;
     height: 30px;
     margin-top: 10px;
+}
+@media (min-width: 610px){
+    .galery{
+        justify-content: center;
+        width: 596px;
+    }
+    .galary_field{
+        display: flex;
+        justify-content: space-between;
+        width: 596px;
+    } 
+    .category {
+        width: 590px;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 1360px){
+    .galery{
+     justify-content: space-between;
+        width: 1200px;
+        gap: 20px;
+    }
+    .category {
+        width: 1200px;
+        justify-content: left;
+        gap: 24px;
+       
+    }
+    .galary_field{
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        flex-direction: column;
+    } 
+    .galary_item{
+        border:none;
+        width: 1073px;
+        flex-direction: row;
+        height: 300px;
+        justify-content: space-between;
+    }
+    .galary_item img{
+        width: 459px;
+        height: 300px;
+        border-radius:10px;
+    }
+    .info_section{
+        box-sizing:border-box;
+        padding: 35px;
+        width: 590px;
+        border:1px solid #ffffff;
+        border-radius:10px;
+    }
+    .info_section h3{
+        font-size: 32px;
+        line-height: 30px;
+        width: 530px;
+        margin-bottom: 12px;
+    }
+    .info_section p:nth-of-type(1){
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .line{
+        width: 350px;
+        margin-bottom: 12px;
+    }
+    .info_section p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .info_section button{
+        margin-top: 40px;
+    }
 }

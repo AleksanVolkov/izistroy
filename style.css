@@ -339,7 +339,9 @@ h3{
     
 
 }
+
 #left_hero button{
+    position: relative;
     width: 140px;
     height: 60px;
     background-color: transparent;
@@ -349,10 +351,38 @@ h3{
     font-weight: 500;
     border-radius: 10px;
     margin-bottom: 20px;
-
-
-    
+    z-index: 1;
+    overflow: hidden;
 }
+
+#left_hero button:hover{
+ color:#333333;
+ font-weight: 600;
+    
+
+}
+
+#left_hero button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -65px;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    color:#333333;
+    background: #E4B564;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  #left_hero button:hover::after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+
+
 #hero img{
     width: 64px;
     height: 64px;
@@ -619,6 +649,7 @@ height: 0;
 footer{
     padding-top: 100px;
     border-top: 1px solid #ffffff;
+    z-index: 1;
 
 }
 #footer_left{
@@ -784,25 +815,7 @@ form button{
 
 
 
-.category{
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-    width: 290px;
-    margin: 15px auto 0;
-}
-.category button{
-    width: 137px;
-    height: 33px;
-    color:#E4B564;
-    font-size: 14px;
-    line-height: 11px;
-    margin-bottom: 15px;
-    background-color:transparent;
-    border:1px solid #E4B564;
-    border-radius:5px;
-    transition: all 0.8s;
-}
+
 .navigation__footer{
     display: none;
 }
@@ -1166,6 +1179,7 @@ padding: 0;
     right: -25px;
     border: none;
     background: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
 }
 .blog_item h3{
@@ -1257,6 +1271,9 @@ padding: 0;
         
     
     }
+    .pop_up {
+        padding-top: 10%;
+    }
     .box{
         box-sizing: border-box;
         height: 190px;
@@ -1339,6 +1356,7 @@ padding: 0;
 
     .blog_item p{
         font-size: 16px;
+        width: 590px;
     }
     #future_main{
         
@@ -1428,7 +1446,18 @@ padding: 0;
         justify-content: start;
     
     }
+    .descr{
+        width: 590px;
+        font-size: 20px;
+    
+    }
+    .technologies_items{
+        width: 590px;
+    }
+    
 }
+
+
 @media (min-width: 1360px){
     #logo_desk{
         display: block;
@@ -1515,7 +1544,10 @@ padding: 0;
         height: 60px;
         font-size: 16px;
         font-weight: 500;
-        
+    }
+    #left_hero button:after{
+        left: -50px;
+        }
         
 
 
@@ -1609,7 +1641,11 @@ padding: 0;
         
     }
     .descr{
-        min-height: 250px;
+        width: 1200px;
+        margin: 0 auto 30px;
+    }
+    .technologies_items{
+        width: 1200px;
     }
 
     .blog_item h3{
@@ -1620,6 +1656,8 @@ padding: 0;
 
     .blog_item p{
         font-size: 16px;
+        width: 380px;
+        min-height: 230px;
     }
     .future{
         width: 1200px;

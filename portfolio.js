@@ -1,6 +1,9 @@
 const tabsParent= document.querySelector('.category'),
+    buttonModal = document.querySelectorAll('#modal_portfolio')
     galeryArr= document.querySelectorAll('.galery'),
     tabs=document.querySelectorAll('.tab_item');
+   
+
 
 /*portfolio***********************************/
 function showGalery(i){
@@ -34,3 +37,16 @@ tabsParent.addEventListener('click',(e)=>{
 
 })
 
+
+buttonModal.forEach(item=>{
+    item.addEventListener('click',()=>{
+        modal.style.display="block"
+        body.style.overflow="hidden"
+    })
+})
+
+closeModal.addEventListener('click',()=>{
+    modal.style.display="none"
+    body.style.overflow="scroll"
+
+})
