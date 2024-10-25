@@ -1552,7 +1552,7 @@ padding: 0;
 
 
         
-    }
+    
     #right_hero{
         
         display: flex;
@@ -1871,8 +1871,5 @@ padding: 0;
         flex-direction: column;
         
     }
-    /* #projects_main h2{
-        margin:50px 0 ;
-     
-     } */
+   
 }
