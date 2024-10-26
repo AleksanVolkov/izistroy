@@ -48,3 +48,23 @@
 #vacancies_main .vacancies_item p{
     margin: 0;
 }
+@media (min-width:600px) {
+
+    #vacancies_main h3,#vacancies_main p{
+        width: 590px;
+    }
+    .vacancies_item{
+        width: 590px;
+    }
+    
+}
+@media (min-width:1360px) {
+
+    #vacancies_main h3,#vacancies_main p{
+        width: 1200px;
+    }
+    .vacancies_item{
+        width: 1200px;
+    }
+    
+}

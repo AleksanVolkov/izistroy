@@ -77,7 +77,12 @@
 
    
     <main id="about_Us__main">
-        <img class="back" src="./images/aboutus.png" alt="">
+        <picture>
+            <source srcset="./images/aboutUs_360px.webp" media="(max-width: 500px)">
+            <source srcset="./images/aboutUs_1360px.webp" media="(max-width: 1980px)">
+            <img class="back" src="./images/aboutUs_360px.webp" alt="о нас">
+        </picture>
+     
         <h2>INVERTA:&nbsp; <span>строительная компания нового поколения</span></h2>
         <h3 class="descr">&nbsp;INVERTA – это динамично развивающаяся строительная компания. Наша команда профессионалов стремится к созданию современных и комфортных пространств для жизни и работы. Мы гордимся тем, что можем предложить нашим клиентам высококачественные услуги по строительству, ремонту и благоустройству объектов любой сложности.</h3>
         <section id="about_Us">

@@ -960,7 +960,7 @@ padding: 0;
 
 #our_objects_main .descr{
     
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .our_objects_item{
     position: relative;
@@ -1254,6 +1254,10 @@ padding: 0;
 .gold{
     color:#E4B564 ;
 }
+.back{
+    height: 700px;
+    top: 130px;
+}
 
 @media (min-width: 600px){
     
@@ -1341,10 +1345,11 @@ padding: 0;
         width: 590px;
         margin: 0 auto;
     }
-
-    #blog_page__main{
-       
+    #technologies{
+        margin-bottom: 30px;
     }
+
+  
     .blog_items{
         width: 590px;
     }
@@ -1364,6 +1369,36 @@ padding: 0;
         background:url(./images/blogBG_600px.webp);
         
         
+    }
+    .documents_field {
+        width: 590px;
+    }
+    .documents_items{
+        width: 590px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .documents_field h3{
+        width: 590px;
+        margin: 0 auto 15px;
+    }
+    .documents_field p {
+        width: 590px;
+    }
+    .document_item li{
+        margin-bottom: 10px;
+    }
+    .document_item{
+        height: 280px;
+    }
+    .document_item span{
+        display: block;
+        width: 250px;
+        height: 60px;
+    }
+    #our_objects_main{
+        width: 590px;
     }
     #advantages{
         width: 590px;
@@ -1431,6 +1466,7 @@ padding: 0;
         
         
     }
+    
     #projects{
         width: 100%;
        display: flex;
@@ -1454,6 +1490,29 @@ padding: 0;
     .technologies_items{
         width: 590px;
     }
+    #contacts_page__main h3{
+        width: 590px;
+    } 
+    .contacts_page__items{
+        width: 590px;
+    }
+    .our_objects_item img{
+        display: block;
+        margin: 0 auto 25px;
+        width: 590px;
+    }
+    #about_Us__main{
+        margin-bottom: 30px;
+    }
+    #about_Us__main h3{
+        width: 590px;
+    }
+    .about_Us__items{
+        width: 590px;
+    }
+    #footer{
+        display: flex;
+    }
     
 }
 
@@ -1473,13 +1532,13 @@ padding: 0;
         width: 100%;
       }
       .navigation__nav_desk{
-        width: 55%;
-        padding: 15px 100px;
+        width: 68%;
+        padding: 15px 50px 15px 100px ;
         box-sizing:border-box ;
       }
       .navigation__list_desk{
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         gap:15px;
       }
       
@@ -1695,12 +1754,17 @@ padding: 0;
     }
     li{
         margin-bottom: 15px;
-        margin: 0 auto;
+        margin: 0 ;
     }
     li span.p_title{
         color:#ffbb6b;
     }
-  
+    #contacts_page__main h3{
+        width: 1200px;
+    } 
+    .contacts_page__items{
+        width: 1200px;
+    }
     #advantages{
         width: 1200px;
     }
@@ -1708,10 +1772,7 @@ padding: 0;
         display: flex;
         justify-content: space-between;
     }
-    /* #advantages h2{
-       margin: 30px auto 50px;
-       width: 1200px;
-    } */
+
     .advantages_item h3{
         width: 235px;
         font-size: 32px;
@@ -1733,7 +1794,9 @@ padding: 0;
         left: 25px;
         font-size: 80px;
     }
-
+    #our_objects_main{
+        width: 1200px;
+    }   
     .obj_wrapper{
         width: 1200px;
         margin: 0 auto;
@@ -1752,9 +1815,20 @@ padding: 0;
       
         
     }
+    #our_objects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .our_objects_item{
+        width: 590px;
+    }
     #objects img{
         top: -75px;
         height: 780px;
+    }
+    .our_objects_item img.icon{
+       display: none;
     }
     
     
@@ -1790,12 +1864,9 @@ padding: 0;
         width: 100%;
         margin-bottom: 50px;
     }
-    /* .documents_field h2{
-        color:#E4B564;
-        font-size: 40px;
-        margin: 50px 0;
-    
-    } */
+    .documents_field p{
+        width: 1200px;
+    }
     .documents_field h3{
         padding: 0;
         width: 100%;
@@ -1805,9 +1876,13 @@ padding: 0;
         justify-content: space-between;
         gap: 15px;
         margin-bottom: 25px;
+        width: 1200px;
     }
     .document_item{
         width: 50%;
+    }
+    .document_item li{
+        width: 450px;
     }
     footer{
         display: flex;
@@ -1870,6 +1945,16 @@ padding: 0;
         margin: 0 auto 50px;
         flex-direction: column;
         
+    }
+    #about_Us__main h3{
+        width: 1200px;
+    }
+    .about_Us__items{
+        width: 1200px;
+    }
+    .back{
+        height: 870px;
+        filter: brightness(0.1);
     }
    
 }
