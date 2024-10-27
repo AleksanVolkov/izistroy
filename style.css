@@ -70,6 +70,8 @@ h2{
     border:none;
     background-color:#0e0e0e00;
     cursor: pointer;
+    width: 120px;
+    height: 40px;
 }
 .pop_up{
     background-color:#333333;
@@ -178,7 +180,7 @@ h2{
     text-decoration: none;
     text-transform: uppercase;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #E4B564 50%);
-    background-size: 220%;
+    background-size: 230%;
     transition: all 0.4s;
   }
   .navigation__link:link span, .navigation__link:visited span {
@@ -801,7 +803,7 @@ form button{
     margin-bottom: 8px;
     background-color: #E4B564;
     width: 200px;
-    height: 30px;
+    min-height: 30px;
     font-size: 14px;
     color: #333333;
     font-weight: 600;
@@ -907,11 +909,11 @@ form button{
     margin-bottom: 15px;
     height: 260px;
 }
-.document_item:nth-child(2n)::after, .document_item:nth-child(2n+1)::after{
+.document_item:nth-child(n)::after{
     content:"";
     position:absolute;
     top: 0;
-    right: 0;
+    right: 15px;
     color:transparent;
     font-size: 200px;
     -webkit-text-stroke: 2px #E4B564;
@@ -919,15 +921,27 @@ form button{
     
   
 }
-.document_item:nth-child(2n)::after{
-    content:'2';
+.document_item:nth-child(1)::after{
+    content:'1';
     transform: translate(0, 0);
 
 }
-.document_item:nth-child(2n+1)::after{
-    content:'1';
+.document_item:nth-child(2)::after{
+    content:'2';
     transform: translateX(10%);
-    
+}
+.document_item:nth-child(3)::after{
+    content:'3';
+    transform: translate(0, 0);
+
+}
+.document_item:nth-child(4)::after{
+    content:'4';
+    transform: translateX(10%);
+}
+.document_item:nth-child(5)::after{
+    content:'5';
+    transform: translate(0, 0);
 
 }
 .document_item span{
@@ -941,6 +955,7 @@ form button{
 }
 .document_item ul{
 padding: 0;
+margin-top: 10px;
 }
 .document_item li{
     list-style: none;
@@ -1151,6 +1166,24 @@ padding: 0;
 }
 .contacts_page__item .tel a{
     color:#ffffff;
+    position: relative;
+}
+
+.tel_logo {
+ position: relative;
+}
+.plus_logo{
+    padding-left: 35px;
+    
+}
+.logo_tel{
+    width: 30px;
+    height: 15px;
+    background:url(./images/A1_Logo_Red\ \(1\).webp);
+    background-size:contain;
+    position: absolute;
+    left: -35px;
+    top: 0;
 }
 
 #blog_page__main{
@@ -1377,6 +1410,7 @@ padding: 0;
         width: 590px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
     }
     .documents_field h3{
@@ -1589,6 +1623,7 @@ padding: 0;
         padding: 0 100px;
         justify-content: flex-end;
         gap: 20px;
+        height: 77px;
     }
     #hero{
         width: 1200px;
@@ -1648,7 +1683,7 @@ padding: 0;
         margin-bottom: 25px;
     }
     #menu{
-       margin: 0;
+       margin: 10px 0;
        padding: 0;
     }
    
@@ -1879,7 +1914,7 @@ padding: 0;
         width: 1200px;
     }
     .document_item{
-        width: 50%;
+        width: 49%;
     }
     .document_item li{
         width: 450px;
