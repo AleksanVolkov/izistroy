@@ -65,12 +65,12 @@
         </div>
     </div>
     <div class="pop_up">
-        <form action="">
+        <form id="popUpForm">
             <div class="close"></div>
             <h3>Остались вопросы?</h3>
             <p class="form_p_one">Просто оставьте заявку заявку и мы окажем Вам профессиональную консультацию.</p>
-                <input type="text" placeholder="Ваше имя">
-                 <input type="text" placeholder="+375" value="+375">
+                <input type="text" name="name" placeholder="Ваше имя">
+                 <input type="text" name="phone" placeholder="+375" value="+375">
             <button>Получить консультацию</button>
             <p class="form_p_two">Ваши контакты используются исключительно для связи с Вами и не будут переданы третьим лицам.</p>
         </form>
@@ -83,7 +83,7 @@
                     в одном месте</h1>
                     <div class="button_hero_section">
                         <button onclick="window.location.href = './projects.html';">Наши проекты</button>
-                        <button>Перезвоните мне</button> 
+                        <button id="callmy">Перезвоните мне</button> 
                     </div>
                     
             </div>
@@ -125,22 +125,22 @@
             <div class="services">
                 <ul id="services_ul">
                     <li class="services_li">
-                        <a href="">Строительство</a>
+                        <a href="./services.html">Строительство</a>
                     </li>
                     <li class="services_li">
-                        <a href="">Проектирование</a>
+                        <a href="./services.html">Проектирование</a>
                     </li>
                     <li class="services_li">
-                        <a href="">Технический надзор</a>
+                        <a href="./services.html">Технический надзор</a>
                     </li>
                     <li class="services_li">
-                        <a href="">Реконструкция зданий</a>
+                        <a href="./services.html">Реконструкция зданий</a>
                     </li>
                     <li class="services_li">
-                        <a href="">Реставрация сооружений</a>
+                        <a href="./services.html">Реставрация сооружений</a>
                     </li>
                     <li class="services_li">
-                        <a href="">Лаборатория испытания качества строительных материалов</a>
+                        <a href="./services.html">Лаборатория испытания качества строительных материалов</a>
                     </li>
                     
                 </ul>
@@ -294,16 +294,16 @@
                     <li class="navigation__item_footer"><a href="./vacancies.html" class="navigation__link ">Вакансии   </a></li>
                 </ul>
             </nav>
-            <form action="">
+            <form type="footer_form">
                 <h3>Остались вопросы?</h3>
                 <p class="form_p_one">Просто оставьте заявку заявку и мы окажем Вам профессиональную консультацию.</p>
               
               
                   
-                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" name="name" placeholder="Ваше имя">
               
             
-                     <input type="text" placeholder="+375" value="+375">
+                     <input type="text" name="phone" placeholder="+375" value="+375">
            
                 
                 <button>Получить консультацию</button>
@@ -312,7 +312,10 @@
         </section>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
+    <script src="./bot.js"></script>
+    
 </body>
 </html>
 
