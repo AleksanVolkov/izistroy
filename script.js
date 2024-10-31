@@ -4,11 +4,13 @@ const body = document.querySelector('body'),
         modal=document.querySelector('.pop_up')
 
 
-
-
-closeModal.addEventListener('click',()=>{
+function closeMod(){
     modal.style.display="none"
     body.style.overflow="scroll"
+}
+
+closeModal.addEventListener('click',()=>{
+    closeMod()
 
 })
 
@@ -21,7 +23,8 @@ openModal.forEach(item=>{
 })
 
 /************************************************tg*/
-const allForm= document.querySelector('#popUpForm');
+const allForm= document.querySelector('#popUpForm'),
+messageMod=document.querySelector('.message');
       
 let TOKEN='7160931872:AAFX_4Ji0SmaLpaB4DHkWD1G3a6rauOO6GM';
 let URI_API=`https://api.telegram.org/bot${ TOKEN }/sendMessage`;
@@ -51,9 +54,16 @@ allForm.addEventListener('submit',function(e){
     
     this.name.value=''
     this.phone.value='+375'
-    modal.style.display="none"
-    body.style.overflow="scroll"
-   
+    allForm.style.display="none"
+    messageMod.style.display="block"
+
+    function resetMod(){
+        allForm.style.display="flex"
+        messageMod.style.display="none"
+        setTimeout(closeMod(),500)
+
+    }
+    setTimeout(resetMod,3500)
    
    })
 

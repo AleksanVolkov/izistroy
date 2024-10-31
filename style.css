@@ -87,6 +87,9 @@ h2{
     
 
 }
+.message{
+    display: none;
+}
 .close{
     background: url(./images/close-square-svgrepo-com\ \(3\).svg);
     background-size:contain;
