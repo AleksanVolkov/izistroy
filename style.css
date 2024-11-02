@@ -10,6 +10,7 @@ body{
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     
    
   
@@ -88,6 +89,9 @@ h2{
 
 }
 .message{
+    display: none;
+}
+.message_static{
     display: none;
 }
 .close{
@@ -655,6 +659,7 @@ footer{
     padding-top: 100px;
     border-top: 1px solid #ffffff;
     z-index: 1;
+    min-height: 700px;
 
 }
 #footer_left{
@@ -757,6 +762,7 @@ form{
     align-items:center;
     padding: 35px 30px;
     position: relative;
+    height: 350px;
 }
 .input_item{
   position: relative;
@@ -1753,7 +1759,7 @@ margin-top: 10px;
     .blog_item p{
         font-size: 16px;
         width: 380px;
-        min-height: 230px;
+        min-height: 245px;
     }
     .future{
         width: 1200px;
@@ -1925,7 +1931,7 @@ margin-top: 10px;
         display: flex;
         width: 100%;
         justify-content: space-between;
-        
+        min-height: inherit;
         padding-bottom: 50px;
     }
     #footer{
