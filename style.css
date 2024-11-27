@@ -90,6 +90,7 @@ h2{
 }
 .message{
     display: none;
+    
 }
 .message_static{
     display: none;
@@ -186,9 +187,10 @@ h2{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.4s;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #E4B564 50%);
     background-size: 230%;
-    transition: all 0.4s;
+    
   }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
@@ -585,18 +587,15 @@ h3{
     justify-content: left;
     align-items:top;
     border-radius:10px;
-      text-align: center;
-     padding-top:15px ;
-      
-      color:#ffffff;
+    text-align: center;
+    padding-top:15px ;
+    color:#ffffff;
       
 }
 
 .object_item:hover{
     
     color:#e4b56400;
-    
-    
 }
 
 
@@ -772,6 +771,8 @@ margin-bottom: 8px;
 width: 200px;
 height: 60px;
 box-sizing:border-box;
+border-radius: 10px;
+padding-left:10px ;
 
 }
 .form_label{
@@ -816,6 +817,7 @@ form button{
     font-size: 14px;
     color: #333333;
     font-weight: 600;
+    border-radius:5px;
     
 }
 
@@ -963,8 +965,8 @@ form button{
 
 }
 .document_item ul{
-padding: 0;
-margin-top: 10px;
+    padding: 0;
+    margin-top: 10px;
 }
 .document_item li{
     list-style: none;
@@ -1299,6 +1301,16 @@ margin-top: 10px;
     height: 700px;
     top: 130px;
 }
+#houses{
+    display: flex;
+ 
+}
+#houses_main{
+    min-height: calc(100vh - 600px);
+}
+#houses_footer{
+   
+}
 
 @media (min-width: 600px){
     
@@ -1378,6 +1390,7 @@ margin-top: 10px;
     #services_ul li a{
         font-size: 20px;
         line-height: 20px;
+        font-weight: 400;
 
     }
     .ser_plus_row{
